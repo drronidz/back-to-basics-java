@@ -1,2 +1,2 @@
-# back-to-basics-java
+# Java – “Back to Basics”
 Covering Java core concepts
