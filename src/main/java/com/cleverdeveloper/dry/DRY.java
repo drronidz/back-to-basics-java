@@ -1,4 +1,4 @@
-package com.cleverdeveloper;
+package com.cleverdeveloper.dry;
 
 /*
 PROJECT NAME : Back 2 Basics (Java Core)
@@ -7,6 +7,9 @@ Author Name : @ DRRONIDZ
 DATE : 10/30/2022 12:03 AM
 */
 
-public class Main {
+public class DRY {
     /* Write code here ... #### */
+    public static void main(String[] args) {
+
+    }
 }
