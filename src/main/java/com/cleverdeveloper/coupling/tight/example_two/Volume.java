@@ -1,4 +1,4 @@
-package com.cleverdeveloper.coupling.tight.example_two;
+package com.cleverdeveloper.coupling.tight.example_two;;
 
 /*
 PROJECT NAME : Back 2 Basics (Java Core)
