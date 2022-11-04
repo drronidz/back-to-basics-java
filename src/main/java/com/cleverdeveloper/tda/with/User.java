@@ -10,6 +10,7 @@ DATE : 11/4/2022 11:05 PM
 import java.util.Random;
 
 public class User {
+
     private String id;
     private String firstName;
     private String lastName;
