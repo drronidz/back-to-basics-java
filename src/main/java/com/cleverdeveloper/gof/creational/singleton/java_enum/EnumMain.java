@@ -1,4 +1,4 @@
-package com.cleverdeveloper.gof.creational.singleton.simple;
+package com.cleverdeveloper.gof.creational.singleton.java_enum;
 
 /*
 PROJECT NAME : Back 2 Basics (Java Core)
