@@ -22,9 +22,8 @@ public class Singleton {
 
     // A static method to create instanceof Singleton class.
     public static Singleton getInstance() {
-
-        if(single_instance == null) single_instance = new Singleton();
-
-        return single_instance;
+        return single_instance == null
+                ? single_instance = new Singleton()
+                : single_instance;
     }
 }
