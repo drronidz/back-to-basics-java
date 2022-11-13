@@ -1,4 +1,4 @@
-package com.cleverdeveloper.gof.creational.singleton.static_block_initialization;
+package com.cleverdeveloper.gof.creational.singleton.how_to_do_in_java.static_block_initialization;
 
 /*
 PROJECT NAME : Back 2 Basics (Java Core)

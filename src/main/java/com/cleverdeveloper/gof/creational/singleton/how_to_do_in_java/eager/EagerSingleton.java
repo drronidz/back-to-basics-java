@@ -1,4 +1,4 @@
-package com.cleverdeveloper.gof.creational.singleton.eager;
+package com.cleverdeveloper.gof.creational.singleton.how_to_do_in_java.eager;
 
 /*
 PROJECT NAME : Back 2 Basics (Java Core)

@@ -1,4 +1,4 @@
-package com.cleverdeveloper.gof.creational.singleton.read_resolve;
+package com.cleverdeveloper.gof.creational.singleton.how_to_do_in_java.read_resolve;
 
 /*
 PROJECT NAME : Back 2 Basics (Java Core)

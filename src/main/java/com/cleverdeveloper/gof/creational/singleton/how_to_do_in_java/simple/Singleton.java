@@ -1,4 +1,4 @@
-package com.cleverdeveloper.gof.creational.singleton.simple;
+package com.cleverdeveloper.gof.creational.singleton.how_to_do_in_java.simple;
 
 /*
 PROJECT NAME : Back 2 Basics (Java Core)
