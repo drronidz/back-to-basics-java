@@ -1,4 +1,4 @@
-package com.cleverdeveloper.gof.creational.prototype.example_two;
+package com.cleverdeveloper.gof.creational.prototype.baeldung;
 
 /*
 PROJECT NAME : Back 2 Basics (Java Core)

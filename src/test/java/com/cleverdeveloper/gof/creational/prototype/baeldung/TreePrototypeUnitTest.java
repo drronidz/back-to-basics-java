@@ -1,11 +1,10 @@
-package com.cleverdeveloper.gof.creational.prototype.example_two;
+package com.cleverdeveloper.gof.creational.prototype.baeldung;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.toList;
 import static org.junit.jupiter.api.Assertions.*;

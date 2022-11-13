@@ -1,4 +1,4 @@
-package com.cleverdeveloper.gof.creational.prototype.example_two;
+package com.cleverdeveloper.gof.creational.prototype.baeldung;
 
 /*
 PROJECT NAME : Back 2 Basics (Java Core)
@@ -6,8 +6,6 @@ Module NAME: IntelliJ IDEA
 Author Name : @ DRRONIDZ
 DATE : 11/11/2022 11:40 PM
 */
-
-import java.util.Objects;
 
 public class Position {
 
