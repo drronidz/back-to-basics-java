@@ -24,6 +24,7 @@ class TreePrototypeUnitTest {
     Position positionOne;
     Position positionTwo;
 
+
     @BeforeEach
     void setUp() {
         double mass = 10.0;

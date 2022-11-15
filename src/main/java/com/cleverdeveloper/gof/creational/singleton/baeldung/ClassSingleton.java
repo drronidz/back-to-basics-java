@@ -16,7 +16,9 @@ public class ClassSingleton {
     }
 
     public static ClassSingleton getInstance() {
-        return INSTANCE == null ? INSTANCE = new ClassSingleton() : INSTANCE;
+        return INSTANCE == null
+                ? INSTANCE = new ClassSingleton()
+                : INSTANCE;
     }
 
     public String getInformation() {

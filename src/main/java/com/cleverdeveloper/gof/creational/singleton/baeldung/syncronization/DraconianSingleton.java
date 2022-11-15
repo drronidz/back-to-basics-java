@@ -15,8 +15,8 @@ public class DraconianSingleton {
     }
 
     public static synchronized DraconianSingleton getInstance() {
-        return instance == null ? instance = new DraconianSingleton() : instance;
+        return instance == null
+                ? instance = new DraconianSingleton()
+                : instance;
     }
-
-
 }
