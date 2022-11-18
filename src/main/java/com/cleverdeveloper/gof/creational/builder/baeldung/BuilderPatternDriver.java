@@ -1,4 +1,4 @@
-package com.cleverdeveloper.gof.creational.builder;
+package com.cleverdeveloper.gof.creational.builder.baeldung;
 
 /*
 PROJECT NAME : Back 2 Basics (Java Core)

@@ -7,8 +7,7 @@ Author Name : @ DRRONIDZ
 DATE : 11/11/2022 11:48 PM
 */
 
-public class PlasticTree extends Tree {
-
+ public class PlasticTree extends Tree {
     private String name;
 
     public PlasticTree(double mass, double height) {
@@ -22,8 +21,12 @@ public class PlasticTree extends Tree {
 
     @Override
     public Tree copy() {
-        Tree plasticTreeClone = new PlasticTree(this.getMass(), this.getHeight());
-        plasticTreeClone.setPosition(this.getPosition());
+        Tree plasticTreeClone =
+                new PlasticTree(
+                        this.getMass(),
+                        this.getHeight());
+        plasticTreeClone
+                .setPosition(this.getPosition());
         return plasticTreeClone;
     }
 }

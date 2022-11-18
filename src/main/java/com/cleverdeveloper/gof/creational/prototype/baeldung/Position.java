@@ -7,10 +7,8 @@ Author Name : @ DRRONIDZ
 DATE : 11/11/2022 11:40 PM
 */
 
-public class Position {
-
-    private final int x;
-    private final int y;
+ public class Position {
+    private final int x,y;
 
     public Position(int x, int y) {
         this.x = x;
@@ -20,24 +18,19 @@ public class Position {
     public int getX() {
         return x;
     }
-
     public int getY() {
         return y;
     }
 
     @Override
     public boolean equals(Object o) {
-       if (this == o)
-           return true;
-       if (o == null)
-           return false;
+       if (this == o) return true;
+       if (o == null) return false;
        if (getClass() != o.getClass())
            return false;
        Position other = (Position) o;
-       if (x != other.x)
-           return false;
-       if (y != other.y)
-           return false;
+       if (x != other.x) return false;
+       if (y != other.y) return false;
        return true;
     }
 
@@ -52,6 +45,8 @@ public class Position {
 
     @Override
     public String toString() {
-        return "Position [x=" + x + ", y=" + y + "]";
+        return "Position [" +
+                "x=" + x + ", " +
+                "y=" + y + "]";
     }
-}
+ }

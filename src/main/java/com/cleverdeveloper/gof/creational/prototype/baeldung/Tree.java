@@ -7,10 +7,8 @@ Author Name : @ DRRONIDZ
 DATE : 11/11/2022 11:39 PM
 */
 
-public abstract class Tree {
-
-    private double mass;
-    private double height;
+ public abstract class Tree {
+    private double mass,height;
     private Position position;
 
     public Tree(double mass, double height) {
@@ -44,8 +42,7 @@ public abstract class Tree {
 
     @Override
     public String toString() {
-        return "Tree{" +
-                "mass=" + mass +
+        return "Tree{" + "mass=" + mass +
                 ", height=" + height +
                 ", position=" + position +
                 '}';
