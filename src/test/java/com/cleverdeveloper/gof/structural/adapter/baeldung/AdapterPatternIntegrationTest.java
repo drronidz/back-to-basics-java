@@ -1,5 +1,6 @@
-package com.cleverdeveloper.gof.structural.adapter;
+package com.cleverdeveloper.gof.structural.adapter.baeldung;
 
+import com.cleverdeveloper.gof.structural.adapter.baeldung.*;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -16,7 +17,7 @@ class AdapterPatternIntegrationTest {
     @Test
     public void givenMovableAdapter_WhenConvertingMPHtoKMPH_thenSuccessfullyConverted() {
         Movable bugattiVeyron = new BugattiVeyron();
-        MovableAdapter  bugattiVeyronAdapter = new MovableAdapterImpl(bugattiVeyron);
+        MovableAdapter bugattiVeyronAdapter = new MovableAdapterImpl(bugattiVeyron);
         assertEquals(bugattiVeyronAdapter.getSpeed(), 431.30312, 0.00001);
 
         Movable mcLaren = new McLaren();

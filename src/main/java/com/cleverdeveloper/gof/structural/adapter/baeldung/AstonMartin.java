@@ -1,4 +1,4 @@
-package com.cleverdeveloper.gof.structural.adapter;
+package com.cleverdeveloper.gof.structural.adapter.baeldung;
 
 /*
 PROJECT NAME : Back 2 Basics (Java Core)

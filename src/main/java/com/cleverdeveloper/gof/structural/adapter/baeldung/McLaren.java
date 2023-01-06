@@ -1,15 +1,15 @@
-package com.cleverdeveloper.gof.structural.adapter;
+package com.cleverdeveloper.gof.structural.adapter.baeldung;
 
 /*
 PROJECT NAME : Back 2 Basics (Java Core)
 Module NAME: IntelliJ IDEA
 Author Name : @ DRRONIDZ
-DATE : 1/6/2023 3:01 PM
+DATE : 1/6/2023 3:00 PM
 */
 
-public class BugattiVeyron implements Movable{
+public class McLaren implements Movable{
     @Override
     public double getSpeed() {
-        return 268;
+        return 241;
     }
 }
