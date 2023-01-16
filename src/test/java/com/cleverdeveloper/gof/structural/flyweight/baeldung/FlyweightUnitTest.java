@@ -34,6 +34,5 @@ class FlyweightUnitTest {
         assertNotNull(blackVehicle, "Object returned by the factory is null!");
         assertNotNull(anotherBlackVehicle, "Object returned by the factory is null!");
         assertEquals(blackVehicle, anotherBlackVehicle, "Objects returned by the factory are equals!");
-
     }
 }
