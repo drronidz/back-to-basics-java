@@ -32,6 +32,12 @@ public class ConsumerDriver {
         System.out.println("############### Printing Employees on console && Storing Employees in DB ###############");
         forEach(employees, printOnConsole.andThen(storeInDB));
 
+        System.out.println("############### Say Hello ###############");
+        Consumer<String> consumerSayHello = ConsumerDriver::printMessage;
+        consumerSayHello.accept(employees.get(0).getName());
+        consumerSayHello.accept(employees.get(1).getName());
+        consumerSayHello.accept(employees.get(2).getName());
+
     }
 
     public static <T> void forEach(List<T> list, Consumer<T> consumer) {
@@ -44,5 +50,9 @@ public class ConsumerDriver {
             }
         }
         System.out.printf("%d null entries found in the list.\n", count);
+    }
+
+    public static void printMessage(String name) {
+        System.out.println("Hello " + name);
     }
 }
