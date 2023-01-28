@@ -1,4 +1,4 @@
-package com.cleverdeveloper.functional_interfaces;
+package com.cleverdeveloper.functional_interfaces.predicate;
 
 /*
 PROJECT NAME : Back 2 Basics (Java Core)
