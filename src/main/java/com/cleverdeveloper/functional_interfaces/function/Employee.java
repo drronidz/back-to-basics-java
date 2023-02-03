@@ -8,14 +8,17 @@ DATE : 1/28/2023 3:23 PM
 */
 
 public class Employee {
+
     private int id;
     private String name;
     private double salary;
+    private Address address;
 
-    public Employee(int id, String name, double salary) {
+    public Employee(int id, String name, double salary, Address address) {
         this.id = id;
         this.name = name;
         this.salary = salary;
+        this.address = address;
     }
 
     public int getId() {
@@ -42,12 +45,21 @@ public class Employee {
         this.salary = salary;
     }
 
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
     @Override
     public String toString() {
-        return " Employee {" +
+        return "Employee{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", salary=" + salary +
+                ", address=" + address +
                 '}';
     }
 }
