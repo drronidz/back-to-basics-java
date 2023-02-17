@@ -28,8 +28,10 @@ public class Sorting {
         Arrays.stream(mobiles).forEach(System.out::println);
 
         System.out.println("############### Using Lambda Expression ###############");
-        /* Using This one : */Arrays.sort(mobiles, (s1, s2) -> s1.compareTo(s2));
-        /* Or using This one : */Arrays.sort(mobiles, String::compareTo);
+        /* Using This one : */
+        Arrays.sort(mobiles, (s1, s2) -> s1.compareTo(s2));
+        /* Or using This one : */
+        Arrays.sort(mobiles, String::compareTo);
 
         System.out.println("############### Using Stream.of to covert in Stream ###############");
         Stream.of(mobiles).forEach(System.out::println);
