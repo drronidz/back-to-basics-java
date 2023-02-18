@@ -79,5 +79,20 @@ public class StreamDrivenPattern {
         // Converting a Stream to an Array
         String[] colorsArray = Stream.of("Pink", "Blue", "orange")
                 .toArray(String[]::new);
+
+        /** ######################## Ways of Printing a Stream  ########################"); **/
+        Stream<Integer> streamToPrint = Stream.of(1, 2, 3, 4, 5);
+        // 1
+        streamToPrint.forEach(System.out::println);
+        // 2
+        System.out.println(streamToPrint.collect(Collectors.toList()));
+        // 3
+        streamToPrint.limit(4).forEach(System.out::println);
+        // 4
+        streamToPrint.peek(System.out::println).count();
+
+        /** ######################## How to use Stream Intermediate Operations  ########################"); **/
+
+
     }
 }
