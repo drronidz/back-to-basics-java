@@ -10,9 +10,7 @@ DATE : 2/18/2023 11:45 PM
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 import java.util.stream.*;
 
 public class StreamDrivenPattern {
@@ -63,6 +61,23 @@ public class StreamDrivenPattern {
         DoubleStream doubleStream = DoubleStream.generate(Math::random);
 
 
-        /** ######################## Ways of Creating a Stream ########################"); **/
+        /** ######################## Ways of Converting a Stream to Collection ########################"); **/
+
+        // Converting a Stream to a List :
+        List<String> listOfColors = Stream.of("Pink", "Blue", "orange")
+                .collect(Collectors.toList());
+
+        // Converting a Stream to a Set
+        Set<Integer> setOfNumbers = Stream.of(1, 2, 3, 4, 5).collect(Collectors.toSet());
+
+        // Converting a Stream to a Map
+        Map<String, Integer> colorsMap = Stream.of("Pink", "Blue", "orange")
+                .collect(Collectors.toMap(
+                        color -> color,
+                        color -> color.length()));
+
+        // Converting a Stream to an Array
+        String[] colorsArray = Stream.of("Pink", "Blue", "orange")
+                .toArray(String[]::new);
     }
 }
