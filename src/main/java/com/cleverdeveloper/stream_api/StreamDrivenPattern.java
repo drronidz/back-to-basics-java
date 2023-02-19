@@ -7,7 +7,10 @@ Author Name : @ DRRONIDZ
 DATE : 2/18/2023 11:45 PM
 */
 
+import com.sun.xml.internal.bind.v2.runtime.reflect.Lister;
+
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
@@ -93,6 +96,52 @@ public class StreamDrivenPattern {
 
         /** ######################## How to use Stream Intermediate Operations  ########################"); **/
 
+        /* filter() */
+        Stream<String> streamOfAnimals = Stream.of("Lion", "cat", "monkey", "cow", "horse");
+        streamOfAnimals.filter(animal -> animal.startsWith("c")).forEach(System.out::print);
+        // output : catcow
 
+        /* distinct() */
+        Stream<String> streamOfAnimalsOne = Stream.of("cat", "cat", "monkey", "cow", "cat");
+        streamOfAnimalsOne.distinct().forEach(System.out::print);
+        // output : monkeycow
+
+        /* limit() & skip() */
+        Stream<Integer> numbersOne = Stream.iterate(1, n -> n + 1);
+        numbersOne.skip(9).limit(6).forEach(System.out::print);
+        // output : 101112131415
+
+
+        List<Programmer> listOfProgrammers = Arrays.asList(
+                new Programmer("ProgrammerOne", Arrays.asList("Java" , "Python", "Angular")),
+                new Programmer("ProgrammerTwo", Arrays.asList("Ruby" , "Angular", "Java")),
+                new Programmer("ProgrammerThree", Arrays.asList("React" , "Spring", "Angular"))
+        );
+
+        /* map() */
+        listOfProgrammers.stream()
+                .map(Programmer::getName)
+                .collect(Collectors.toList())
+                .forEach(System.out::println);
+        // output :
+        // ProgrammerOne
+        // ProgrammerTwo
+        // ProgrammerThree
+
+        /* flatMap() */
+        listOfProgrammers.stream()
+                .flatMap( programmer -> programmer.getSkills().stream())
+                .collect(Collectors.toSet())
+                .forEach(System.out::println);
+
+        // output :
+        // Java
+        // Spring
+        // Ruby
+        // React
+        // Angular
+        // Python
+
+        /* sorted() */
     }
 }
